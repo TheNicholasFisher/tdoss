@@ -1,4 +1,4 @@
-/* i know this css is shit you dont have to tell me */
+/* i know this css is sh*t you dont have to tell me */
 
 
 
@@ -12,34 +12,30 @@
     src: url(HelveticaNeue-ThinCond.woff), format('woff');
 }
 
-.html{
+html{
     background-color: black;
-    overflow-y: hidden;
-    overflow-x: hidden;
     font-family: 'Helvetica107ExtraBlackCondensed';
 
     margin: 0px;
     padding: 0px;
+    
+    background: url(grave.png) no-repeat fixed; 
+
+    background-position-x: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
 }
 
 html, body {
     overflow-x: hidden;
     overflow-y: hidden;
-}
-
-#background {
-    z-index: -1;
-    position: absolute;
-    transform: scale(1.1);
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
 }
 
 .top{
@@ -83,6 +79,8 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
 
     top: 70px;
     z-index: 1;
