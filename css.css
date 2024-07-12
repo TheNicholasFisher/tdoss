@@ -1,0 +1,248 @@
+/* i know this css is shit you dont have to tell me */
+
+
+
+@font-face{
+    font-family: 'Helvetica107ExtraBlackCondensed';
+    src: url(HelveticaNeue-ExtBlackCond.woff), format('woff');
+}
+
+@font-face{
+    font-family: 'HelveticaNeueThinCondensed';
+    src: url(HelveticaNeue-ThinCond.woff), format('woff');
+}
+
+.html{
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Helvetica107ExtraBlackCondensed';
+
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#background {
+    z-index: -1;
+    position: absolute;
+    transform: scale(1.1);
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.top{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 65px;
+    margin-top: -10px;
+    margin-left: -8px;
+    padding-top: 20px;
+    filter: drop-shadow(0.0rem 0.55rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.top img{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h1{
+    font-family: 'Helvetica107ExtraBlackCondensed';
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 15px;
+    font-family: 'HelveticaNeueThinCondensed';
+}
+
+.title{
+    max-width: 700px;
+    margin-left: -14px;
+}
+
+.head{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 70px;
+    z-index: 1;
+    -webkit-animation: pulse1 1.2s ease-in-out infinite alternate-reverse;
+}
+
+.vinyl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.vinyl img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    cursor: pointer;
+}
+
+.play img{
+    max-width: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.buy{
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 80px;
+    -webkit-animation: pulse1 1.2s ease-in-out infinite alternate-reverse;
+}
+
+.buyText{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+
+    background-color: rgb(114, 114, 114);
+    
+    background-position-x: center;
+    border-radius: 20px;
+    outline: 3px solid rgb(92, 92, 92);
+}
+
+.buy a{
+    text-decoration: none;
+}
+
+.buy a:hover{
+    margin-bottom: -1px;
+    margin-left: 1px;
+    box-shadow: none;
+    border-width: 1px;
+}
+
+h2{
+    font-size: 20px;
+    font-family: 'Helvetica107ExtraBlackCondensed';
+    
+}
+
+h2, h3{
+    color: black;
+}
+
+.boringLegal{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: -10px;
+    margin: auto;
+    color: rgb(117, 117, 117);
+    text-shadow: .5px .5px 2px black;
+    font-size: 15px;
+    font-family: 'HelveticaNeueThinCondensed';
+}
+
+.boringLegal a{
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+    text-shadow: .5px .5px 2px black;
+    font-size: 15px;
+    font-family: 'HelveticaNeueThinCondensed';
+}
+
+#clicked {
+    -webkit-animation: fade .5s ease-in 0s 1 normal forwards;
+    -moz-animation: fade .5s ease-in 0s 1 normal forwards;
+    animation: fade .5s ease-in 0s 1 normal forwards;
+    cursor: auto;
+}
+
+#spinning{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    cursor: pointer;
+}
+
+@-webkit-keyframes fade{
+    0%{
+        opacity: 100;
+        display: block;
+    }
+    99%{
+        top: 50%;
+    }
+    100%{
+       opacity: 0;
+       display: none;
+       top: 1%;
+    }
+
+}
+
+@-webkit-keyframes pulse1{
+    0%{
+        text-shadow: 0 0 15px rgba(255,0,0,.8); }
+    50%{
+        text-shadow: 0 0 15px rgba(130.5,0,117.5,.3); }
+    100%{
+        text-shadow: 0 0 15px rgba(0, 0, 235, 0.8); }
+}
+
+@-webkit-keyframes pulse2{
+    0%{
+        text-shadow: 0 0 15px rgba(6, 0, 235, 0.8); }
+    50%{
+        text-shadow: 0 0 15px rgba(130.5,0,117.5,.3); }
+    100%{
+        text-shadow: 0 0 15px rgba(255,0,0,.8); }
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+} 
+}
